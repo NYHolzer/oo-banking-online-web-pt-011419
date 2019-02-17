@@ -10,7 +10,7 @@ class Transfer
   end 
   
   def valid? 
-    Bank_account.all.each do 
+    Bank_account.all.detect do 
   end 
   
 end
