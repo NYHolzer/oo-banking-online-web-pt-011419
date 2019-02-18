@@ -10,6 +10,7 @@ class Transfer
   end 
   
   def valid? 
+    binding.pry
     BankAccount.all.include?(self.sender || self.receiver)
   end 
   
