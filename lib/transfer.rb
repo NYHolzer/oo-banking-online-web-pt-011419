@@ -10,7 +10,7 @@ class Transfer
   end 
   
   def valid? 
-    Bank_account.all.include?(self.sender || self.receiver)
+    BankAccount.all.include?(self.sender || self.receiver)
   end 
   
 end
